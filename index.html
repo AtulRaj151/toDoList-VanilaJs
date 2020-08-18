@@ -2,7 +2,32 @@
 <html>
   <head>
     <title>TodoList-VanilaJS</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/69f44224ba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          name="task-input"
+          id="task-input"
+          placeholder="Type your TodoList Here..."
+        />
+        <i class="fas fa-plus-circle" id="add-button"></i>
+        <p id="complete-all-task">Complete all Task</p>
+        <p id="clear-compeleted">Clear Completed</p>
+      </div>
+
+      <div class="task-container">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

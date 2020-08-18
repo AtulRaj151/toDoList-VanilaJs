@@ -1,0 +1,54 @@
+.container {
+  width: 40vw;
+  height: 40vw;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 5px;
+}
+
+.input-container {
+  border-bottom: 1px solid black;
+  border-bottom-style: dotted;
+  position: absolute;
+  width: 98%;
+  height: 15%;
+  left: 1%;
+  top: 1%;
+}
+
+input {
+  background: url(https://image.flaticon.com/icons/svg/1/1560.svg) left
+    no-repeat;
+  width: 86%;
+  height: 50%;
+  outline: none;
+  outline-width: 0.1rem;
+  border-radius: 11px;
+  background-size: 7%;
+  padding-left: 50px;
+  border-width: 0;
+}
+#add-button {
+  cursor: pointer;
+}
+
+#complete-all-task {
+  display: inline-block;
+  opacity: 0.8;
+  float: left;
+  cursor: pointer;
+  margin-top: 1%;
+}
+#complete-all-task::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f560";
+  opacity: 0.5;
+}
+#clear-compeleted {
+  display: inline-block;
+  opacity: 0.8;
+  float: right;
+  cursor: pointer;
+  margin-top: 1%;
+}
