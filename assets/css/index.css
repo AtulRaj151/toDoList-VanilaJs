@@ -16,7 +16,7 @@
   top: 1%;
 }
 
-input {
+#task-input {
   background: url(https://image.flaticon.com/icons/svg/1/1560.svg) left
     no-repeat;
   width: 86%;
@@ -30,6 +30,11 @@ input {
 }
 #add-button {
   cursor: pointer;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  left: 93%;
+  top: 11%;
 }
 
 #complete-all-task {
@@ -51,4 +56,43 @@ input {
   float: right;
   cursor: pointer;
   margin-top: 1%;
+}
+.task-container {
+  /* border: 1px solid red; */
+  position: relative;
+  top: 19%;
+  width: inherit;
+}
+.tasks {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  text-align: center;
+  width: inherit;
+  /* border: 1px solid black; */
+  position: relative;
+  padding: 12px;
+  box-shadow: cadetblue;
+  box-shadow: 0px 0px 3px 1px lightgrey;
+}
+li input {
+  display: inline-block;
+  position: absolute;
+  left: 0%;
+  top: 38%;
+  float: left;
+}
+li i {
+  position: relative;
+  right: 3%;
+  margin-top: -2%;
+  left: 30%;
+}
+.task-checkbox:checked ~ label {
+  text-decoration: line-through;
 }
