@@ -83,6 +83,10 @@
     } else if (e.target.id === "add-button") {
       //add task dom when button is pressed
       let text = inputText.value;
+      if (!text) {
+        alert("task shouldnot be empty");
+        return;
+      }
       const task = {
         text,
         id: Date.now().toString(),
@@ -104,6 +108,10 @@
   handleKeyListener = (e) => {
     if (e.key === "Enter") {
       let text = e.target.value;
+      if (!text) {
+        alert("task shouldnot be empty");
+        return;
+      }
       const task = {
         text: text,
         id: Date.now().toString(),
